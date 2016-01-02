@@ -4,7 +4,7 @@
 
 int main ()
 {
-    int fahr, celsius;
+    float fahr, celsius;
     int lower, upper, step;
 
     lower = 0;   // Lower limit of temp table
@@ -14,8 +14,8 @@ int main ()
     printf("Fahrenheit\tCelsius\n");
 
     while (fahr <= upper) {
-        celsius = 5 * (fahr-32) / 9;
-        printf("%10d\t%7d\n", fahr, celsius);
+        celsius = (5.0/9.0) * (fahr-32.0);
+        printf("%10.2f\t%7.2f\n", fahr, celsius);
         fahr = fahr + step;
     }
 }
