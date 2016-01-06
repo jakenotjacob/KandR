@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-//97,  65: a, A
-//122, 90: z, Z
+//97-122: a-z
 
 #define ALPH_LEN 26
 
