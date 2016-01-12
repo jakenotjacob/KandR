@@ -12,6 +12,7 @@ int main() {
 
     max = 0;
     while ((len = get_line(line, MAXLINE)) != 0) {
+        printf("Line: %sLength: %d\n", line, len);
         if (len > max) {
             max = len;
             copy(longest, line);
