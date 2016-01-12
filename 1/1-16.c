@@ -11,8 +11,7 @@ int main() {
     char longest[MAXLINE];
 
     max = 0;
-    while ((len = get_line(line, MAXLINE)) != 0) {
-        printf("%s->%d\n", line, len);
+    while ((len = get_line(line, MAXLINE)) != 80) {
         if (len > max) {
             max = len;
             copy(longest, line);
